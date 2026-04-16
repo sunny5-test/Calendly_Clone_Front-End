@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getToken, removeToken } from '@/utils/auth';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://calendly-clone-backend-homc.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE,
