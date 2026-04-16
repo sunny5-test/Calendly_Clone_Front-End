@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { isAuthenticated } from '@/utils/auth';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://calendly-clone-backend-homc.onrender.com/api';
+const API_BASE = 'https://calendly-clone-backend-homc.onrender.com/api';
 
 function LoginPageInner() {
   const router = useRouter();
