@@ -1,6 +1,7 @@
 import './globals.css';
 import Sidebar from '@/components/layout/Sidebar';
 import MainContent from '@/components/layout/MainContent';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'Calendly Clone — Scheduling made simple',
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
             {children}
           </MainContent>
         </div>
+        <SpeedInsights />
       </body>
     </html>
   );
