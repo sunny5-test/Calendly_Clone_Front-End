@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { getToken, removeToken } from '@/utils/auth';
 
-const API_BASE = 'https://calendly-clone-backend-homc.onrender.com/api';
+// Uses Vercel environment variable if set, otherwise falls back to Render URL
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://calendly-clone-backend-homc.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE,
