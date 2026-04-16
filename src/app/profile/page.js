@@ -47,7 +47,7 @@ function ProfileContent() {
    */
   const refreshToken = async () => {
     try {
-      const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+      const API_BASE = 'https://calendly-clone-backend-homc.onrender.com/api';
       const res = await fetch(`${API_BASE}/profile/refresh-token`, {
         headers: { Authorization: `Bearer ${getToken()}` },
       });
